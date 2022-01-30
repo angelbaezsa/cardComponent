@@ -20,6 +20,15 @@ section {
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(159, 185, 207);
+}
+a:hover{
+  color: aquamarine;
 }
 
 .card {
@@ -53,18 +62,59 @@ section {
   margin-bottom: 8px;
   
 }
+.age{
+    margin-left: 6px;
+}
 .age,.city,.meta{
     
     font-weight: 400;
     color: black;
     opacity: .8;
 }
+.card-body .city{
+    font-size: .9rem;
+    
+}
 .card-footer{
     border-top: 1px solid hsl(0, 0%, 59%);
     display: flex;
-    padding: 15px 25px;
+    padding: 15px 25px 30px;
 }
 .card-footer .item{
     flex: 1;
     align-items: center;
+   
 }
+.card-footer .item .value{
+    font-size: 1rem;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.card-footer .item .meta{
+    font-size: 0. rem;
+    letter-spacing: 2px;
+}
+
+.attribution{
+    text-align: center;
+    padding: 20px 15px;
+    background-color: rgb(12, 58, 85);
+    color: aliceblue;
+}
+
+/* circles */
+.top-circle{
+  position: absolute;
+  width: 55%;
+  top: -400px;
+  left: -350px;
+}
+
+.bottom-circle{
+  position: absolute;
+  width: 55%;
+  right: -350px;
+  bottom: -400px;
+}
+
